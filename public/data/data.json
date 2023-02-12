@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "book-recommendation-system",
+      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
+      "source_url": "https://github.com/SoumyadeepDatta/book-recommendation-system.git",
+      "demo_url": "https://bookscraper20.herokuapp.com/",
+      "description": "recommendation system using KNN; ml-mywbut summer training project;"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science Engineering",
+      "organization": "St. Thomas' College of Engineering & Technology",
+      "board": "MAKAUT",
+      "start": "2019",
+      "end": "2023",
+      "score": "9.78",
+      "score_unit": "CGPA"
+    }
+  ],
+  "skills": ["DBMS", "OOPS", "Data Structures"],
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/SoumyadeepDatta"
+    }
+  ],
+  "techs": [
+    {
+      "name": "Javascript",
+      "certification": {
+        "organization": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org/certification/fcc32590d31-5298-48dd-ab40-46be48e84151/javascript-algorithms-and-data-structures",
+        "description": "JavaScript Algorithms and Data Structures",
+        "verification_id": "fcc32590d31-5298-48dd-ab40-46be48e84151"
+      }
+    }
+  ]
+}
