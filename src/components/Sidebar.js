@@ -7,8 +7,10 @@ function Sidebar() {
       Sidebar
         <ul>
             <li><Link to="/">About Me</Link></li>
+            <li><Link to="/education">My Education</Link></li>
             <li><Link to="/skills">My Skills</Link></li>
             <li><Link to="/works">My Works</Link></li>
+            <li><Link to="/contact">Contact Me</Link></li>
         </ul>
     </div>
   )

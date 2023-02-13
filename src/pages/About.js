@@ -1,8 +1,12 @@
 import React from 'react'
 
-function About() {
+function About(props) {
   return (
-    <div>About</div>
+    <div>
+      <img src={props.data.img} alt="" />
+      <h1>Hi I'm {props.data.name}</h1>
+      <p>{props.data.objective}</p>
+    </div>
   )
 }
 
