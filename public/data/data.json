@@ -10,7 +10,8 @@
       "y": 2000
     },
     "address": "169, Rifle Club East, Bansdroni, Kolkata - 700070, West Bengal, India",
-    "phone": "+91 6290566238"
+    "phone": "+91 6290566238",
+    "nationality": "Indian"
   },
   "works": [
     {
@@ -21,31 +22,82 @@
       "source_url": "https://github.com/SoumyadeepDatta/book-recommendation-system.git",
       "demo_url": "https://bookscraper20.herokuapp.com/",
       "description": "A recommendation system using KNN algorithm written in Python and uses libraries such as - numpy, pandas, scikit-learn and renders the webpage using streamlit."
+    },
+    {
+      "id": 1,
+      "type": "work",
+      "name": "csv-to-json-converter",
+      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
+      "source_url": "https://github.com/SoumyadeepDatta/csv-to-json-converter",
+      "demo_url": "https://github.com/SoumyadeepDatta/csv-to-json-converter",
+      "description": "A Java program which converts an CSV file to JSON array without using any external library. It implements the concepts of OOPS, file handling etc."
+    },
+    {
+      "id": 2,
+      "type": "work",
+      "name": "posenet-demo-ml5js",
+      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
+      "source_url": "https://github.com/SoumyadeepDatta/posenet-demo-ml5js",
+      "demo_url": "https://soumyadeepdatta.github.io/posenet-demo-ml5js/",
+      "description": "An open source online-exam invigilation system. It monitors candidates and detects malpractices during invigilation. Made with ML5js & P5js. Keypoints & skeletons are drawn using p5js (both single pose and multi-pose)."
     }
   ],
   "education": [
     {
+      "id": 0,
       "degree": "B.Tech in Computer Science Engineering",
-      "organization": "St. Thomas' College of Engineering & Technology",
+      "organization": "St. Thomas' College of Engineering & Technology, Kolkata",
       "board": "MAKAUT",
       "start": "2019",
       "end": "2023",
       "score": "9.78",
       "score_unit": "CGPA"
+    },
+    {
+      "id": 1,
+      "degree": "Higher Secondary Examination",
+      "organization": "Niva Ananda Vidyalaya Brahmapur, Kolkata",
+      "board": "WBCHSE",
+      "start": "2017",
+      "end": "2018",
+      "score": "86.67",
+      "score_unit": "%"
+    },
+    {
+      "id": 2,
+      "degree": "Secondary Examination",
+      "organization": "Niva Ananda Vidyalaya Brahmapur, Kolkata",
+      "board": "WBBSE",
+      "start": "2015",
+      "end": "2016",
+      "score": "90.57",
+      "score_unit": "%"
     }
   ],
-  "skills": ["DBMS", "OOPS", "Data Structures"],
+  "skills": [
+    "Database Management System",
+    "Object Oriented Programming",
+    "Data Structures"
+  ],
   "social": [
     {
       "name": "GitHub",
       "url": "https://github.com/SoumyadeepDatta"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/soumyadeep-datta-884090216/"
+    },
+    {
+      "name": "Gmail",
+      "url": "mailto:soumyadeepdatta34@gmail.com"
     }
   ],
   "techs": [
     {
       "id": 0,
       "type": "tech",
-      "name": "Javascript",
+      "name": "JavaScript Algorithms and Data Structures",
       "certification": {
         "organization": "freeCodeCamp",
         "url": "https://www.freecodecamp.org/certification/fcc32590d31-5298-48dd-ab40-46be48e84151/javascript-algorithms-and-data-structures",

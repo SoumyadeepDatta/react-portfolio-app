@@ -5,7 +5,10 @@ function Education(props) {
     <div>
       <ul>
         {props.data.map((e, id) => (
-          <li key={id}>{e.degree}</li>
+          <li key={id}>
+            <h1>{e.degree}</h1>
+            <p>{JSON.stringify(e)}</p>
+          </li>
         ))}
       </ul>
     </div>
