@@ -1,7 +1,7 @@
 {
   "about": {
     "name": "Soumyadeep Datta",
-    "img": "/assets/dp.jfif",
+    "img": "/assets/images/dp.jfif",
     "objective": "I am interested in Web Development & Data Science. I need an organization where I can utilize and enhance my skills, make remarkable contribution for the organization's growth and maintain a long term relationship with the same.",
     "languages": ["English", "Bengali"],
     "dob": {
@@ -40,6 +40,15 @@
       "source_url": "https://github.com/SoumyadeepDatta/posenet-demo-ml5js",
       "demo_url": "https://soumyadeepdatta.github.io/posenet-demo-ml5js/",
       "description": "An open source online-exam invigilation system. It monitors candidates and detects malpractices during invigilation. Made with ML5js & P5js. Keypoints & skeletons are drawn using p5js (both single pose and multi-pose)."
+    },
+    {
+      "id": 3,
+      "type": "work",
+      "name": "Ecommerce",
+      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
+      "source_url": "https://github.com/SoumyadeepDatta/Ecommerce",
+      "demo_url": "https://github.com/SoumyadeepDatta/Ecommerce",
+      "description": "B.Tech final year project."
     }
   ],
   "education": [
@@ -100,10 +109,84 @@
       "name": "JavaScript Algorithms and Data Structures",
       "certification": {
         "organization": "freeCodeCamp",
+        "img":"/assests/certificates/0.png",
         "url": "https://www.freecodecamp.org/certification/fcc32590d31-5298-48dd-ab40-46be48e84151/javascript-algorithms-and-data-structures",
         "description": "JavaScript Algorithms and Data Structures",
         "verification_id": "fcc32590d31-5298-48dd-ab40-46be48e84151"
       }
+    },
+    {
+      "id": 1,
+      "type": "tech",
+      "name": "Object Oriented Programming in Java",
+      "certification": {
+        "organization": "Coursera",
+        "img":"/assests/certificates/1.jpeg",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/KT9N7P22ZSJ8",
+        "description": "Object Oriented Programming in Java",
+        "verification_id": "KT9N7P22ZSJ8"
+      }
+    },
+    {
+      "id": 2,
+      "type": "tech",
+      "name": "The Joy of Computing using Python",
+      "certification": {
+        "organization": "NPTEL",
+        "img":"/assests/certificates/2.jpeg",
+        "url": "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL19CS41S51651193191098671",
+        "description": "The Joy of Computing using Python",
+        "verification_id": "NPTEL19CS41551651193"
+      }
+    },
+    {
+      "id": 3,
+      "type": "tech",
+      "name": "Data Analysis Using Python",
+      "certification": {
+        "organization": "Coursera",
+        "img":"/assests/certificates/3.jpeg",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/BDDGWC9PAPRC",
+        "description": "Data Analysis Using Python",
+        "verification_id": "BDDGWC9PAPRC"
+      }
+    },
+    {
+      "id": 4,
+      "type": "tech",
+      "name": "Machine Learning with Python",
+      "certification": {
+        "organization": "Coursera",
+        "img":"/assests/certificates/4.jpeg",
+        "description": "Machine Learning with Python",
+        "verification_id": "ONLNST21088"
+      }
+    },
+    {
+      "id": 5,
+      "type": "tech",
+      "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+      "certification": {
+        "organization": "Coursera",
+        "img":"/assests/certificates/5.jpeg",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/FLF8HBBDBDL8",
+        "description": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+        "verification_id": "FLF8HBBDBDL8"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Hackerrank",
+      "url": ""
+    },
+    {
+      "name": "Geeksforgeeks",
+      "url": ""
+    },
+    {
+      "name": "Kaggle",
+      "url": ""
     }
   ]
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Contact(props) {
   return (
@@ -7,11 +7,15 @@ function Contact(props) {
       <hr />
       <ul>
         {props.data[1].map((e, id) => (
-          <li key={id}><a href={e.url} target="_blank">{e.name}</a></li>
+          <li key={id}>
+            <a href={e.url} target="_blank">
+              {e.name}
+            </a>
+          </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

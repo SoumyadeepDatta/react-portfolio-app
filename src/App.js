@@ -28,7 +28,7 @@ function App() {
               <Education data={data.education} />
             </Route>
             <Route exact path="/skills">
-              <Skills data={[data.skills, data.techs]} />
+              <Skills data={[data.skills, data.profiles, data.techs]} />
             </Route>
             <Route exact path="/works">
               <Works data={data.works} />
