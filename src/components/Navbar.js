@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <div>Navbar</div>
+    <div>{props.data[0]}</div>
   )
 }
 

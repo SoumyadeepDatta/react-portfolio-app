@@ -15,34 +15,36 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
-        <Sidebar />
         {error && <div>{error}</div>}
         {isPending && <div>Loading...</div>}
         {data && (
-          <Switch>
-            <Route exact path="/">
-              <About data={data.about} />
-            </Route>
-            <Route exact path="/education">
-              <Education data={data.education} />
-            </Route>
-            <Route exact path="/skills">
-              <Skills data={[data.skills, data.profiles, data.techs]} />
-            </Route>
-            <Route exact path="/works">
-              <Works data={data.works} />
-            </Route>
-            <Route exact path="/contact">
-              <Contact data={[data.about, data.social]} />
-            </Route>
-            <Route exact path="/works/:id">
-              <Details data={data.works} />
-            </Route>
-            <Route exact path="/certifications/:id">
-              <Details data={data.techs} />
-            </Route>
-          </Switch>
+          <>
+            <Navbar data={[data.about.name, data.about.img]} />
+            <Sidebar />
+            <Switch>
+              <Route exact path="/">
+                <About data={data.about} />
+              </Route>
+              <Route exact path="/education">
+                <Education data={data.education} />
+              </Route>
+              <Route exact path="/skills">
+                <Skills data={[data.skills, data.profiles, data.techs]} />
+              </Route>
+              <Route exact path="/works">
+                <Works data={data.works} />
+              </Route>
+              <Route exact path="/contact">
+                <Contact data={[data.about, data.social]} />
+              </Route>
+              <Route exact path="/works/:id">
+                <Details data={data.works} />
+              </Route>
+              <Route exact path="/certifications/:id">
+                <Details data={data.techs} />
+              </Route>
+            </Switch>
+          </>
         )}
       </div>
     </Router>

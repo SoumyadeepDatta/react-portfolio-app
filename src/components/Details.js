@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Details(props) {
   const { id } = useParams();
@@ -9,12 +9,14 @@ function Details(props) {
       {data.name}
       {data.type === "work" && (
         <div>
+          <Link to="/works">Back</Link>
           <h1>{data.type}</h1>
           {JSON.stringify(data)}
         </div>
       )}
       {data.type === "tech" && (
         <div>
+          <Link to="/skills">Back</Link>
           <h1>{data.type}</h1>
           {JSON.stringify(data)}
         </div>
