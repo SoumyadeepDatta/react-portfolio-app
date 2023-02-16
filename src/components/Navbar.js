@@ -2,12 +2,14 @@ import React, { useContext } from "react";
 import ThemeContext from "../ThemeContext";
 
 function Navbar(props) {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme, toggleThemeValue } = useContext(ThemeContext);
   return (
     <div>
       {props.data[0]}
       <br />
-      <button onClick={() => toggleTheme(theme)}>{theme}</button>
+      Go to <button onClick={() => toggleTheme(theme)}>
+        {toggleThemeValue(theme)}
+      </button>
     </div>
   );
 }
