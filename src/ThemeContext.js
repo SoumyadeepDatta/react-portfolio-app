@@ -4,12 +4,13 @@ const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("darkMode") || false
+    JSON.parse(localStorage.getItem("darkMode")) || false
   );
 
-  function toggleTheme() {
-    setDarkMode(!darkMode);
-    localStorage.setItem("darkMode", darkMode);
+  function toggleTheme(value) {
+    setDarkMode(!value);
+    // console.log(`now dark mode value is ${!value}`);
+    localStorage.setItem("darkMode", !value);
   }
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>

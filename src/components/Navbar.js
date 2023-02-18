@@ -8,8 +8,8 @@ function Navbar(props) {
       {props.data[0]}
       <br />
       Go to{" "}
-      <button onClick={() => toggleTheme()}>
-        Turn on {darkMode ? "light" : "dark"} mode
+      <button onClick={() => toggleTheme(darkMode)}>
+        Turn on {!darkMode ? "dark" : "light"} mode
       </button>
     </div>
   );
