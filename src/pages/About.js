@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import ThemeContext from "../ThemeContext";
 
 function About(props) {
-  const { theme } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
   return (
     <div>
-      <p>Background is {theme}</p>
+      <p>You are using {darkMode ? "dark" : "light"} mode</p>
       <img src={props.data.img} alt="" />
       <h1>Hi I'm {props.data.name}</h1>
       <p>{props.data.objective}</p>
