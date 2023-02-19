@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import MyNav from "./components/MyNav";
 import Sidebar from "./components/Sidebar";
 import Details from "./components/Details";
 import UseFetch from "./hooks/useFetch";
@@ -21,7 +21,7 @@ function App() {
           {isPending && <div>Loading...</div>}
           {data && (
             <>
-              <Navbar data={[data.about.name, data.about.img]} />
+              <MyNav data={[data.about.name, data.about.img]} />
               <Sidebar />
               <Switch>
                 <Route exact path="/">
