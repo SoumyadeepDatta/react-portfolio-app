@@ -9,10 +9,10 @@ import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
-import { ThemeProvider } from "./ThemeContext";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
-  const [data, isPending, error] = UseFetch("/data/data.json");
+  const [data, isPending, error] = UseFetch("/assets/data/data.json");
   return (
     <ThemeProvider>
       <Router>

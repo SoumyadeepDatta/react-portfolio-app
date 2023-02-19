@@ -110,7 +110,7 @@
       "name": "JavaScript Algorithms and Data Structures",
       "certification": {
         "organization": "freeCodeCamp",
-        "img": "/assests/certificates/0.png",
+        "img": "/assests/images/0.png",
         "url": "https://www.freecodecamp.org/certification/fcc32590d31-5298-48dd-ab40-46be48e84151/javascript-algorithms-and-data-structures",
         "description": "JavaScript Algorithms and Data Structures",
         "verification_id": "fcc32590d31-5298-48dd-ab40-46be48e84151"
@@ -122,7 +122,7 @@
       "name": "Object Oriented Programming in Java",
       "certification": {
         "organization": "Coursera",
-        "img": "/assests/certificates/1.jpeg",
+        "img": "/assests/images/1.jpeg",
         "url": "https://www.coursera.org/account/accomplishments/certificate/KT9N7P22ZSJ8",
         "description": "Object Oriented Programming in Java",
         "verification_id": "KT9N7P22ZSJ8"
@@ -134,7 +134,7 @@
       "name": "The Joy of Computing using Python",
       "certification": {
         "organization": "NPTEL",
-        "img": "/assests/certificates/2.jpeg",
+        "img": "/assests/images/2.jpeg",
         "url": "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL19CS41S51651193191098671",
         "description": "The Joy of Computing using Python",
         "verification_id": "NPTEL19CS41551651193"
@@ -146,7 +146,7 @@
       "name": "Data Analysis Using Python",
       "certification": {
         "organization": "Coursera",
-        "img": "/assests/certificates/3.jpeg",
+        "img": "/assests/images/3.jpeg",
         "url": "https://www.coursera.org/account/accomplishments/certificate/BDDGWC9PAPRC",
         "description": "Data Analysis Using Python",
         "verification_id": "BDDGWC9PAPRC"
@@ -157,8 +157,8 @@
       "type": "tech",
       "name": "Machine Learning with Python",
       "certification": {
-        "organization": "Coursera",
-        "img": "/assests/certificates/4.jpeg",
+        "organization": "MYWBUT",
+        "img": "/assests/images/4.jpeg",
         "description": "Machine Learning with Python",
         "verification_id": "ONLNST21088"
       }
@@ -169,7 +169,7 @@
       "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
       "certification": {
         "organization": "Coursera",
-        "img": "/assests/certificates/5.jpeg",
+        "img": "/assests/images/5.jpeg",
         "url": "https://www.coursera.org/account/accomplishments/certificate/FLF8HBBDBDL8",
         "description": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
         "verification_id": "FLF8HBBDBDL8"

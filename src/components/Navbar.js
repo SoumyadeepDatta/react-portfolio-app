@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ThemeContext from "../ThemeContext";
+import ThemeContext from "../contexts/ThemeContext";
 
 function Navbar(props) {
   const { darkMode, toggleTheme } = useContext(ThemeContext);
