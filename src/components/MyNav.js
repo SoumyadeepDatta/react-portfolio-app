@@ -10,13 +10,14 @@ function MyNav(props) {
       bg={darkMode ? "dark" : "light"}
     >
       <Container>
-        <Navbar.Brand>{props.data[0]}</Navbar.Brand>
+        <Navbar.Brand>{props.data.name}</Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             Turn on:{" "}
             <button onClick={() => toggleTheme(darkMode)}>
               {!darkMode ? "dark" : "light"} mode
             </button>
+            <button onClick={props.data.handleShow}>+</button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

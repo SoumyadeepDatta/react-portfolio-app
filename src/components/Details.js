@@ -6,7 +6,6 @@ function Details(props) {
   const data = props.data.find((e) => e.id === Number(id));
   return (
     <div>
-      {data.name}
       {data.type === "work" && (
         <div>
           <Link to="/works">Back</Link>

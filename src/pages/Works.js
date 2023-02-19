@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
+import MyCard from "../components/MyCard";
 
 function Works(props) {
   return (
-    <div>
-      <ul>
+    <Container>
+      <Row style={{justifyContent:"space-between"}}>
         {props.data.map((e, id) => (
-          <li key={id}>
-            <Link to={`works/${e.id}`}>{e.name}</Link>
-          </li>
+          <Col md="auto" key={id} className="mr-auto">
+            <MyCard data={e} />
+          </Col>
         ))}
-      </ul>
-    </div>
+      </Row>
+    </Container>
   );
 }
 
