@@ -8,7 +8,7 @@ function MyCard(props) {
     <Card
       style={{
         width: "20rem",
-        height: "10rem",
+        height: "18rem",
         marginTop: "50px",
         marginLeft: "auto",
         marginRight: "auto",
@@ -16,7 +16,14 @@ function MyCard(props) {
     >
       <Card.Body>
         <Card.Title>{e.name}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <hr />
+        {/* <Card.Subtitle
+          className="mb-2 text-muted"
+          style={{ textAlign: "justify" }}
+        >
+          {e.description}
+        </Card.Subtitle> */}
+        <Card.Text style={{ textAlign: "justify" }}>{e.description}</Card.Text>
         <Link
           to={`works/${e.id}`}
           style={{ position: "absolute", bottom: "20px" }}
