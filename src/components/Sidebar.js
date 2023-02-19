@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import ThemeContext from "../contexts/ThemeContext";
 
 function Sidebar(props) {
+  const { darkMode } = useContext(ThemeContext);
   return (
     <Offcanvas
       show={props.data.show}
@@ -10,10 +12,16 @@ function Sidebar(props) {
       scroll="true"
       backDrop="true"
     >
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+      <Offcanvas.Header
+        closeButton
+        closeVariant={!darkMode ? "black" : "white"}
+        style={{ background: darkMode ? "black" : "white" }}
+      >
+        <Offcanvas.Title style={{ color: !darkMode ? "black" : "white" }}>
+          Offcanvas
+        </Offcanvas.Title>
       </Offcanvas.Header>
-      <Offcanvas.Body>
+      <Offcanvas.Body style={{ background: darkMode ? "black" : "white" }}>
         <ul>
           <li>
             <Link to="/">About Me</Link>
