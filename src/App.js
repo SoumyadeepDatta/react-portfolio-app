@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import MyNav from "./components/MyNav";
 import Sidebar from "./components/Sidebar";
@@ -9,7 +9,7 @@ import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
-import { ThemeProvider } from "./contexts/ThemeContext";
+import ThemeContext from "./contexts/ThemeContext";
 import { Container } from "react-bootstrap";
 
 function App() {
@@ -20,46 +20,52 @@ function App() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const { darkMode } = useContext(ThemeContext);
+
   return (
-    <ThemeProvider>
-      <Router>
-        <div>
-          {error && <div>{error}</div>}
-          {isPending && <div>Loading...</div>}
-          {data && (
-            <>
-              <MyNav data={{ name: data.about.name, handleShow: handleShow }} />
-              <Sidebar data={{ show: show, handleClose: handleClose }} />
-              <Container>
-                <Switch>
-                  <Route exact path="/">
-                    <About data={data.about} />
-                  </Route>
-                  <Route exact path="/education">
-                    <Education data={data.education} />
-                  </Route>
-                  <Route exact path="/skills">
-                    <Skills data={[data.skills, data.profiles, data.techs]} />
-                  </Route>
-                  <Route exact path="/works">
-                    <Works data={data.works} />
-                  </Route>
-                  <Route exact path="/contact">
-                    <Contact data={[data.about, data.social]} />
-                  </Route>
-                  <Route exact path="/works/:id">
-                    <Details data={data.works} />
-                  </Route>
-                  <Route exact path="/certifications/:id">
-                    <Details data={data.techs} />
-                  </Route>
-                </Switch>
-              </Container>
-            </>
-          )}
-        </div>
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <Container
+        fluid
+        style={{
+          background: darkMode ? "#212529" : "white",
+          color: !darkMode ? "black" : "white",
+          height: "100%",
+        }}
+      >
+        {darkMode}
+        {error && <div>{error}</div>}
+        {isPending && <div>Loading...</div>}
+        {data && (
+          <>
+            <MyNav data={{ name: data.about.name, handleShow: handleShow }} />
+            <Sidebar data={{ show: show, handleClose: handleClose }} />
+            <Switch>
+              <Route exact path="/">
+                <About data={data.about} />
+              </Route>
+              <Route exact path="/education">
+                <Education data={data.education} />
+              </Route>
+              <Route exact path="/skills">
+                <Skills data={[data.skills, data.profiles, data.techs]} />
+              </Route>
+              <Route exact path="/works">
+                <Works data={data.works} />
+              </Route>
+              <Route exact path="/contact">
+                <Contact data={[data.about, data.social]} />
+              </Route>
+              <Route exact path="/works/:id">
+                <Details data={data.works} />
+              </Route>
+              <Route exact path="/certifications/:id">
+                <Details data={data.techs} />
+              </Route>
+            </Switch>
+          </>
+        )}
+      </Container>
+    </Router>
   );
 }
 

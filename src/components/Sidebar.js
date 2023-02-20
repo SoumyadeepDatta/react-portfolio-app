@@ -15,13 +15,13 @@ function Sidebar(props) {
       <Offcanvas.Header
         closeButton
         closeVariant={!darkMode ? "black" : "white"}
-        style={{ background: darkMode ? "black" : "white" }}
+        style={{ background: darkMode ? "#212529" : "white" }}
       >
         <Offcanvas.Title style={{ color: !darkMode ? "black" : "white" }}>
-          Offcanvas
+          Navigate
         </Offcanvas.Title>
       </Offcanvas.Header>
-      <Offcanvas.Body style={{ background: darkMode ? "black" : "white" }}>
+      <Offcanvas.Body style={{ background: darkMode ? "#212529" : "white" }}>
         <ul>
           <li>
             <Link to="/">About Me</Link>

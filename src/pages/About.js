@@ -1,15 +1,35 @@
-import React, { useContext } from "react";
-import ThemeContext from "../contexts/ThemeContext";
+import React from "react";
+import { Col, Container, Image, Row } from "react-bootstrap";
+
+const colStyle = {
+  marginTop: "50px",
+  marginLeft: "auto",
+  marginRight: "auto",
+  alignSelf: "center",
+};
 
 function About(props) {
-  const { darkMode } = useContext(ThemeContext);
   return (
-    <div>
-      <p>You are using {darkMode ? "dark" : "light"} mode</p>
-      <img src={props.data.img} alt="" />
-      <h1>Hi I'm {props.data.name}</h1>
-      <p>{props.data.objective}</p>
-    </div>
+    <Container style={{height:"100vh"}}>
+      <Row>
+        <Col md={4} style={colStyle}>
+          <Image
+            src={props.data.img}
+            style={{
+              width: "80%",
+              height: "auto",
+            }}
+            thumbnail="true"
+          />
+        </Col>
+        <Col md={(8, { order: "first" })} style={colStyle}>
+          <h1>
+            Hi I'm <strong>{props.data.name}</strong>
+          </h1>
+          <p style={{ textAlign: "justify" }}>{props.data.objective}</p>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
