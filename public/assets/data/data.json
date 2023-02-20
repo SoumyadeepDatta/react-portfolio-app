@@ -15,7 +15,6 @@
       "id": 0,
       "type": "work",
       "name": "book-recommendation-system",
-      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
       "source_url": "https://github.com/SoumyadeepDatta/book-recommendation-system.git",
       "demo_url": "https://bookscraper20.herokuapp.com/",
       "description": "A recommendation system using KNN algorithm written in Python and uses libraries such as - numpy, pandas, scikit-learn and renders the webpage using streamlit."
@@ -24,7 +23,6 @@
       "id": 1,
       "type": "work",
       "name": "csv-to-json-converter",
-      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
       "source_url": "https://github.com/SoumyadeepDatta/csv-to-json-converter",
       "demo_url": "https://github.com/SoumyadeepDatta/csv-to-json-converter",
       "description": "A Java program which converts an CSV file to JSON array without using any external library. It implements the concepts of OOPS, file handling etc."
@@ -33,7 +31,6 @@
       "id": 2,
       "type": "work",
       "name": "posenet-demo-ml5js",
-      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
       "source_url": "https://github.com/SoumyadeepDatta/posenet-demo-ml5js",
       "demo_url": "https://soumyadeepdatta.github.io/posenet-demo-ml5js/",
       "description": "An open source online-exam invigilation system. It monitors candidates and detects malpractices during invigilation. Made with ML5js & P5js. Keypoints & skeletons are drawn using p5js (both single pose and multi-pose)."
@@ -42,7 +39,6 @@
       "id": 3,
       "type": "work",
       "name": "Ecommerce",
-      "thumbnail": "https://static.vecteezy.com/system/resources/previews/005/048/106/original/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg",
       "source_url": "https://github.com/SoumyadeepDatta/Ecommerce",
       "demo_url": "https://github.com/SoumyadeepDatta/Ecommerce",
       "description": "B.Tech final year project."

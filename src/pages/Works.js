@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import MyCard from "../components/MyCard";
 
 function Works(props) {
   return (
-    <Container>
+    <Container style={{marginTop: "50px"}}>
+      <h1>My Works</h1>
       <Row
         style={{
           justifyContent: "space-between",
-          marginTop: "50px",
+          marginTop: "50px"
         }}
       >
         {props.data.map((e, id) => (
