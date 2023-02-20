@@ -95,67 +95,55 @@
     {
       "id": 0,
       "name": "JavaScript Algorithms and Data Structures",
-      "certification": {
-        "organization": "freeCodeCamp",
-        "img": "/assests/images/0.png",
-        "url": "https://www.freecodecamp.org/certification/fcc32590d31-5298-48dd-ab40-46be48e84151/javascript-algorithms-and-data-structures",
-        "description": "JavaScript Algorithms and Data Structures",
-        "verification_id": "fcc32590d31-5298-48dd-ab40-46be48e84151"
-      }
+      "organization": "freeCodeCamp",
+      "img": "/assets/images/0.png",
+      "url": "https://www.freecodecamp.org/certification/fcc32590d31-5298-48dd-ab40-46be48e84151/javascript-algorithms-and-data-structures",
+      "description": "JavaScript Algorithms and Data Structures",
+      "verification_id": "fcc32590d31-5298-48dd-ab40-46be48e84151"
     },
     {
       "id": 1,
       "name": "Object Oriented Programming in Java",
-      "certification": {
-        "organization": "Coursera",
-        "img": "/assests/images/1.jpeg",
-        "url": "https://www.coursera.org/account/accomplishments/certificate/KT9N7P22ZSJ8",
-        "description": "Object Oriented Programming in Java",
-        "verification_id": "KT9N7P22ZSJ8"
-      }
+      "organization": "Coursera",
+      "img": "/assets/images/1.jpeg",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/KT9N7P22ZSJ8",
+      "description": "Object Oriented Programming in Java",
+      "verification_id": "KT9N7P22ZSJ8"
     },
     {
       "id": 2,
       "name": "The Joy of Computing using Python",
-      "certification": {
-        "organization": "NPTEL",
-        "img": "/assests/images/2.jpeg",
-        "url": "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL19CS41S51651193191098671",
-        "description": "The Joy of Computing using Python",
-        "verification_id": "NPTEL19CS41551651193"
-      }
+      "organization": "NPTEL",
+      "img": "/assets/images/2.jpeg",
+      "url": "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL19CS41S51651193191098671",
+      "description": "The Joy of Computing using Python",
+      "verification_id": "NPTEL19CS41551651193"
     },
     {
       "id": 3,
       "name": "Data Analysis Using Python",
-      "certification": {
-        "organization": "Coursera",
-        "img": "/assests/images/3.jpeg",
-        "url": "https://www.coursera.org/account/accomplishments/certificate/BDDGWC9PAPRC",
-        "description": "Data Analysis Using Python",
-        "verification_id": "BDDGWC9PAPRC"
-      }
+      "organization": "Coursera",
+      "img": "/assets/images/3.jpeg",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/BDDGWC9PAPRC",
+      "description": "Data Analysis Using Python",
+      "verification_id": "BDDGWC9PAPRC"
     },
     {
       "id": 4,
       "name": "Machine Learning with Python",
-      "certification": {
-        "organization": "MYWBUT",
-        "img": "/assests/images/4.jpeg",
-        "description": "Machine Learning with Python",
-        "verification_id": "ONLNST21088"
-      }
+      "organization": "MYWBUT",
+      "img": "/assets/images/4.jpg",
+      "description": "Machine Learning with Python",
+      "verification_id": "ONLNST21088"
     },
     {
       "id": 5,
       "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
-      "certification": {
-        "organization": "Coursera",
-        "img": "/assests/images/5.jpeg",
-        "url": "https://www.coursera.org/account/accomplishments/certificate/FLF8HBBDBDL8",
-        "description": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
-        "verification_id": "FLF8HBBDBDL8"
-      }
+      "organization": "Coursera",
+      "img": "/assets/images/5.jpeg",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/FLF8HBBDBDL8",
+      "description": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+      "verification_id": "FLF8HBBDBDL8"
     }
   ],
   "profiles": [

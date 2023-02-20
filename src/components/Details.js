@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 
 function Details(props) {
@@ -31,7 +31,28 @@ function Details(props) {
         <Container>
           <Link to="/skills">Back</Link>
           {/* <h1>{data.type}</h1> */}
-          {JSON.stringify(data)}
+          {/* {JSON.stringify(data)} */}
+          <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
+            <h1>{data.name}</h1>
+            <p>
+              <u>Verification ID:</u> {data.verification_id}
+              <br />
+              {data.url && (
+                <>
+                  <u>URL:</u> <a href={data.url}>Click Here</a>
+                </>
+              )}
+            </p>
+            <Container>
+              <Image
+                src={data.img}
+                style={{
+                  width: "80%",
+                  height: "auto",
+                }}
+              />
+            </Container>
+          </Container>
         </Container>
       )}
     </Container>
