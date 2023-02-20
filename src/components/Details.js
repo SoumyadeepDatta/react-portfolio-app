@@ -7,7 +7,7 @@ function Details(props) {
   const data = props.data.find((e) => e.id === Number(id));
   return (
     <Container>
-      {data.type === "work" && (
+      {props.type === "work" && (
         <Container>
           <Link to="/works">Back</Link>
           <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
@@ -27,7 +27,7 @@ function Details(props) {
           </Container>
         </Container>
       )}
-      {data.type === "tech" && (
+      {props.type === "tech" && (
         <Container>
           <Link to="/skills">Back</Link>
           {/* <h1>{data.type}</h1> */}

@@ -55,10 +55,10 @@ function App() {
                 <Contact data={[data.about, data.social]} />
               </Route>
               <Route exact path="/works/:id">
-                <Details data={data.works} />
+                <Details data={data.works} type="work" />
               </Route>
               <Route exact path="/certifications/:id">
-                <Details data={data.techs} />
+                <Details data={data.techs} type="tech"/>
               </Route>
             </Switch>
           </>
