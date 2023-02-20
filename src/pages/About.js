@@ -10,7 +10,7 @@ const colStyle = {
 
 function About(props) {
   return (
-    <Container style={{height:"100vh"}}>
+    <Container>
       <Row>
         <Col md={4} style={colStyle}>
           <Image

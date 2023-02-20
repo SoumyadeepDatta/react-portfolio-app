@@ -29,7 +29,7 @@ function App() {
         style={{
           background: darkMode ? "#212529" : "white",
           color: !darkMode ? "black" : "white",
-          height: "100%",
+          minHeight: "100vh",
         }}
       >
         {darkMode}
