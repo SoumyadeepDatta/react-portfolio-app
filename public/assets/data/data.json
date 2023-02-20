@@ -3,12 +3,8 @@
     "name": "Soumyadeep Datta",
     "img": "/assets/images/dp.jfif",
     "objective": "I am interested in Web Development & Data Science. I need an organization where I can utilize and enhance my skills, make remarkable contribution for the organization's growth and maintain a long term relationship with the same.",
-    "languages": ["English", "Bengali"],
-    "dob": {
-      "d": 2,
-      "m": 10,
-      "y": 2000
-    },
+    "languages": ["English", "Bengali", "Hindi"],
+    "dob": "2000-10-02",
     "address": "169, Rifle Club East, Bansdroni, Kolkata - 700070, West Bengal, India",
     "phone": "+91 6290566238",
     "nationality": "Indian",
