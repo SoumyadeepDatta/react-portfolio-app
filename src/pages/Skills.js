@@ -26,7 +26,7 @@ function Skills(props) {
         </Col>
       </Row>
       <hr />
-      <Row style={{ marginTop: "50px", marginBottom: "50px" }}>
+      <Row style={{ marginTop: "50px", paddingBottom: "50px" }}>
         <Col md={6}>
           <h1>Certifications</h1>
           <ul>

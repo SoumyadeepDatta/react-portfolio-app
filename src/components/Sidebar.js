@@ -4,7 +4,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import ThemeContext from "../contexts/ThemeContext";
 
 function Sidebar(props) {
-  const { darkMode } = useContext(ThemeContext);
+  const { darkMode, themeStyle } = useContext(ThemeContext);
   return (
     <Offcanvas
       show={props.data.show}
@@ -15,13 +15,11 @@ function Sidebar(props) {
       <Offcanvas.Header
         closeButton
         closeVariant={!darkMode ? "black" : "white"}
-        style={{ background: darkMode ? "#212529" : "white" }}
+        style={themeStyle(darkMode)}
       >
-        <Offcanvas.Title style={{ color: !darkMode ? "black" : "white" }}>
-          Navigate
-        </Offcanvas.Title>
+        <Offcanvas.Title style={themeStyle(darkMode)}>Navigate</Offcanvas.Title>
       </Offcanvas.Header>
-      <Offcanvas.Body style={{ background: darkMode ? "#212529" : "white" }}>
+      <Offcanvas.Body style={themeStyle(darkMode)}>
         <ul>
           <li>
             <Link to="/">About Me</Link>
