@@ -20,16 +20,15 @@ function App() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const { darkMode } = useContext(ThemeContext);
+  const { darkMode, themeStyle } = useContext(ThemeContext);
 
   return (
     <Router>
       <Container
         fluid
         style={{
-          background: darkMode ? "#212529" : "white",
-          color: !darkMode ? "black" : "white",
           minHeight: "100vh",
+          ...themeStyle(darkMode),
         }}
       >
         {darkMode}

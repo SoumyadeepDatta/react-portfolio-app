@@ -12,8 +12,16 @@ export function ThemeProvider({ children }) {
     // console.log(`now dark mode value is ${!value}`);
     localStorage.setItem("darkMode", !value);
   }
+
+  function themeStyle(dark) {
+    return {
+      background: dark ? "#212529" : "white",
+      color: dark ? "white" : "black",
+    };
+  }
+
   return (
-    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+    <ThemeContext.Provider value={{ darkMode, toggleTheme, themeStyle }}>
       {children}
     </ThemeContext.Provider>
   );
