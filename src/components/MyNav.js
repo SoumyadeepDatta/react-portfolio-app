@@ -11,7 +11,10 @@ function MyNav(props) {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand onClick={props.data.handleShow}>
+        <Navbar.Brand
+          onClick={props.data.handleShow}
+          style={{ cursor: "pointer" }}
+        >
           {props.data.name}
         </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">

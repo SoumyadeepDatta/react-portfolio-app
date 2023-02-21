@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import MyNav from "./components/MyNav";
 import Sidebar from "./components/Sidebar";
-import Details from "./components/Details";
+import SkillDetails from "./components/SkillDetails";
 import UseFetch from "./hooks/useFetch";
 import About from "./pages/About";
 import Education from "./pages/Education";
@@ -11,6 +11,7 @@ import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 import ThemeContext from "./contexts/ThemeContext";
 import { Container } from "react-bootstrap";
+import WorkDetails from "./components/WorkDetails";
 
 function App() {
   const [data, isPending, error] = UseFetch("/assets/data/data.json");
@@ -55,10 +56,10 @@ function App() {
                 <Contact data={[data.about, data.social]} />
               </Route>
               <Route exact path="/works/:id">
-                <Details data={data.works} type="work" />
+                <WorkDetails data={data.works} />
               </Route>
               <Route exact path="/certifications/:id">
-                <Details data={data.techs} type="tech" />
+                <SkillDetails data={data.techs} />
               </Route>
             </Switch>
           </>
