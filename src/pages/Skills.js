@@ -19,7 +19,7 @@ function Skills(props) {
           <ul>
             {props.data[1].map((e, id) => (
               <li key={id}>
-                <a href={e.url}>{e.name}</a>
+                <a href={e.url} target="_blank">{e.name}</a>
               </li>
             ))}
           </ul>

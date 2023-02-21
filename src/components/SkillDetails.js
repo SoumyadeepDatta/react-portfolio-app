@@ -16,7 +16,7 @@ function SkillDetails(props) {
             <br />
             {data.url && (
               <>
-                <u>URL:</u> <a href={data.url}>Click Here</a>
+                <u>URL:</u> <a href={data.url} target="_blank">Click Here</a>
               </>
             )}
           </p>
