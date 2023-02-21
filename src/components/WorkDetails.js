@@ -12,15 +12,9 @@ function WorkDetails(props) {
         <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
           <h1>{data.name}</h1>
           <p>
-            Source:{" "}
-            <a href={data.source_url} target="_blank">
-              Click Here
-            </a>
+            Source: <a href={data.source_url}>Click Here</a>
             <br />
-            Demo:{" "}
-            <a href={data.demo_url} target="_blank">
-              Click Here
-            </a>
+            Demo: <a href={data.demo_url}>Click Here</a>
           </p>
           <p style={{ textAlign: "justify" }}>{data.description}</p>
         </Container>
