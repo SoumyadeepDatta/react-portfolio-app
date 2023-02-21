@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import ThemeContext from "./contexts/ThemeContext";
 import { Container } from "react-bootstrap";
 import WorkDetails from "./components/WorkDetails";
+import MySpinner from "./components/MySpinner";
 
 function App() {
   const [data, isPending, error] = UseFetch("/assets/data/data.json");
@@ -33,8 +34,8 @@ function App() {
         }}
       >
         {darkMode}
-        {error && <div>{error}</div>}
-        {isPending && <div>Loading...</div>}
+        {error && alert(error)}
+        {isPending && <MySpinner dark={darkMode} />}
         {data && (
           <>
             <MyNav data={{ name: data.about.name, handleShow: handleShow }} />
