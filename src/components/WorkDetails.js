@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 
 function WorkDetails(props) {

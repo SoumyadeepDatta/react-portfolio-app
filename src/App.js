@@ -33,7 +33,6 @@ function App() {
           ...themeStyle(darkMode),
         }}
       >
-        {darkMode}
         {error && alert(error)}
         {isPending && <MySpinner dark={darkMode} />}
         {data && (
