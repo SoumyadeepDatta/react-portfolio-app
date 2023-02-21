@@ -14,7 +14,7 @@ function Sidebar(props) {
     >
       <Offcanvas.Header
         closeButton
-        closeVariant={!darkMode ? "black" : "white"}
+        closeVariant={themeStyle(darkMode).color}
         style={themeStyle(darkMode)}
       >
         <Offcanvas.Title style={themeStyle(darkMode)}>Navigate</Offcanvas.Title>

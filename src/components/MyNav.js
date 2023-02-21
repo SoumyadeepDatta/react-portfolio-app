@@ -3,14 +3,17 @@ import { Container, Navbar } from "react-bootstrap";
 import ThemeContext from "../contexts/ThemeContext";
 
 function MyNav(props) {
-  const { darkMode, toggleTheme } = useContext(ThemeContext);
+  const { darkMode, toggleTheme, themeStyle } = useContext(ThemeContext);
   return (
     <Navbar
       variant={darkMode ? "dark" : "light"}
       bg={darkMode ? "dark" : "light"}
+      fixed="top"
     >
       <Container>
-        <Navbar.Brand onClick={props.data.handleShow}>{props.data.name}</Navbar.Brand>
+        <Navbar.Brand onClick={props.data.handleShow}>
+          {props.data.name}
+        </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             {/* Turn on:{" "} */}
@@ -20,8 +23,10 @@ function MyNav(props) {
                 borderRadius: "50%",
                 height: "20px",
                 width: "20px",
-                background: darkMode ? "white" : "#212529",
+                background: themeStyle(!darkMode).background,
                 margin: "5px",
+                border: "none",
+                boxShadow: `0 0 15px ${themeStyle(!darkMode).background}`,
               }}
             >
               {/* {!darkMode ? "C" : "*"} */}

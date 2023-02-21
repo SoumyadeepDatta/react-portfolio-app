@@ -14,10 +14,10 @@ export function ThemeProvider({ children }) {
   }
 
   function themeStyle(dark) {
-    return {
+    return ({
       background: dark ? "#212529" : "white",
       color: dark ? "white" : "black",
-    };
+    });
   }
 
   return (

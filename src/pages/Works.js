@@ -5,7 +5,7 @@ import MyCard from "../components/MyCard";
 function Works(props) {
   return (
     <Container style={{marginTop: "50px"}}>
-      <h1>My Works</h1>
+      <h1 style={{paddingTop:"50px"}}>My Works</h1>
       <Row
         style={{
           justifyContent: "space-between",

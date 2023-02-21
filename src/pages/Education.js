@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 function Education(props) {
   return (
     <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
-      <h1>Education</h1>
+      <h1 style={{paddingTop:"50px"}}>Education</h1>
       <ul>
         {props.data.map((e, id) => (
           <li key={id}>

@@ -6,10 +6,10 @@ function Details(props) {
   const { id } = useParams();
   const data = props.data.find((e) => e.id === Number(id));
   return (
-    <Container>
+    <Container style={{paddingTop:"50px", marginTop:"50px"}}>
       {props.type === "work" && (
-        <Container>
-          <Link to="/works">Back</Link>
+        <Container >
+          <Link to="/works" >Back</Link>
           <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
             <h1>{data.name}</h1>
             <p>

@@ -58,7 +58,7 @@ function App() {
                 <Details data={data.works} type="work" />
               </Route>
               <Route exact path="/certifications/:id">
-                <Details data={data.techs} type="tech"/>
+                <Details data={data.techs} type="tech" />
               </Route>
             </Switch>
           </>

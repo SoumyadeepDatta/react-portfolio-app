@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 function Contact(props) {
   return (
     <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
-      <h1>Personal Details</h1>
+      <h1 style={{paddingTop:"50px"}}>Personal Details</h1>
       <ul>
         <li>
           <u>Address:</u> {props.data[0].address}

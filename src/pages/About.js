@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
+import ThemeContext from "../contexts/ThemeContext";
 
 const colStyle = {
   marginTop: "50px",
@@ -9,8 +10,9 @@ const colStyle = {
 };
 
 function About(props) {
+  const { darkMode, themeStyle } = useContext(ThemeContext);
   return (
-    <Container>
+    <Container style={{paddingTop:"50px"}}>
       <Row>
         <Col md={4} style={colStyle}>
           <Image
@@ -18,6 +20,7 @@ function About(props) {
             style={{
               width: "80%",
               height: "auto",
+              boxShadow: `0 0 2px ${themeStyle(!darkMode).background}`,
             }}
             thumbnail="true"
           />

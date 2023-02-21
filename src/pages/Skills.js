@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 function Skills(props) {
   return (
-    <Container >
-      <Row style={{ marginTop: "50px", marginBottom: "50px" }}>
+    <Container style={{paddingTop:"50px"}}>
+      <Row style={{ marginTop: "50px",marginBottom: "50px" }}>
         <Col md={6}>
           <h1>Skills</h1>
           <ul>
