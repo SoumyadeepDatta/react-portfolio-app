@@ -30,8 +30,6 @@ function Details(props) {
       {props.type === "tech" && (
         <Container>
           <Link to="/skills">Back</Link>
-          {/* <h1>{data.type}</h1> */}
-          {/* {JSON.stringify(data)} */}
           <Container style={{ marginTop: "50px", paddingBottom: "50px" }}>
             <h1>{data.name}</h1>
             <p>

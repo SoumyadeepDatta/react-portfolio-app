@@ -16,7 +16,6 @@ function MyNav(props) {
         </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            {/* Turn on:{" "} */}
             <button
               onClick={() => toggleTheme(darkMode)}
               style={{
@@ -28,9 +27,7 @@ function MyNav(props) {
                 border: "none",
                 boxShadow: `0 0 15px ${themeStyle(!darkMode).background}`,
               }}
-            >
-              {/* {!darkMode ? "C" : "*"} */}
-            </button>
+            ></button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
